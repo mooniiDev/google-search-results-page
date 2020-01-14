@@ -1,0 +1,50 @@
+/* Header Style */
+header {
+  display: grid;
+  grid-template-columns: 146px 640px auto 40px 100px;
+  grid-template-rows: 62px 62px;
+  grid-template-areas:
+    "logo search auto apps signin"
+    ". nav . . .";
+}
+/* Logo */
+#logo {
+  grid-area: logo;
+  place-self: center;
+}
+#logo img {
+  width: 100px;
+}
+/* Search */
+#search {
+  grid-area: search;
+  place-self: center;
+}
+#search input {
+  width: 640px;
+}
+/* Apps */
+#apps {
+  grid-area: apps;
+  place-self: center;
+}
+.apps {
+  fill: currentColor;
+  color: #5f6368;
+  width: 24px;
+  height: 24px;
+}
+/* Sign In */
+#signin {
+  grid-area: signin;
+  place-self: center;
+}
+.signin {
+  color: #FFF;
+  background-color: #2B7DF1;
+}
+/* Navigation */
+.nav {
+  grid-area: nav;
+  background-color: #722323;
+}

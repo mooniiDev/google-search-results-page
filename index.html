@@ -6,26 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>build this webpage - Google Search</title>
-  <link type="text/css" rel="stylesheet" href="normalize.css">
-  <link type="text/css" rel="stylesheet" href="reset-local.css">
-  <link type="text/css" rel="stylesheet" href="style.css">
+  <link type="image/x-icon" rel="shortcut icon" href="images/google-favicon-32.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  <link type="text/css" rel="stylesheet" href="normalize.css" />
+  <link type="text/css" rel="stylesheet" href="reset-local.css" />
+  <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <div id="logo"><a href="#" title="Go to Google Home"><img src="images/google-logo.png" alt="Google" class="logo"></a></div>
-    <div id="search"><input type="search" title="Search" class="search"></div>
-    <div id="apps">
-      <a href="#">
-      <svg class="apps" viewBox="0 0 24 24">
-        <path
-          d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
-        </path>
-      </svg>
+    <div id="logo-area">
+      <a href="#" title="Go to Google Home">
+        <img src="images/google-logo.png" alt="Google" class="logo">
       </a>
     </div>
-    <div id="signin"><a href="#" class="signin">Sign in</a></div>
-    <nav class="nav"></nav>
+    <div id="search-area">
+      <form>
+        <input type="search" title="Search" value="build this webpage" class="search">
+        <button type="submit" class="search-btn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+            </path>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div id="apps-area">
+      <a href="#">
+        <svg viewBox="0 0 24 24" class="apps">
+          <path
+            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div id="signin-area">
+      <a href="#" class="signin">
+        Sign in
+      </a>
+    </div>
+    <nav class="nav">
+
+    </nav>
   </header>
 </body>
 

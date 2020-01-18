@@ -10,7 +10,7 @@ body p {
 /* Header */
 header {
   display: grid;
-  grid-template-columns: 146px 640px auto 70px 140px;
+  grid-template-columns: 146px 640px auto 70px 142px;
   grid-template-rows: 64px 64px;
   grid-template-areas:
     "logo search auto apps signin"
@@ -54,7 +54,7 @@ header {
   place-self: center;
 }
 .apps {
-  margin: 27px -3px 0 0;
+  margin: 27px -7px 0 0;
   padding: 8px;
   width: 40px;
   fill: currentColor;
@@ -68,10 +68,10 @@ header {
 #signin-area {
   grid-area: signin;
   place-self: center;
-  margin-top: 18px;
+  margin-top: 22px;
 }
 .signin {
-  margin-right: 100px;
+  margin-right: 46px;
   padding: 9px 25px;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;

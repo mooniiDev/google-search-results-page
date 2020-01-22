@@ -4,17 +4,16 @@ body {
   font-size: 16px;
   color: #222;
 }
-body p {
-  font-size: 14px;
-}
+
 /* Header */
 header {
   display: grid;
   grid-template-columns: 146px 640px auto 70px 142px;
-  grid-template-rows: 64px 64px;
+  grid-template-rows: 65px 58px;
   grid-template-areas:
     "logo search auto apps signin"
     ". nav . . .";
+  border-bottom: 1px solid #ebebeb;
 }
 /* Logo */
 #logo-area {
@@ -23,7 +22,8 @@ header {
 }
 .logo {
   margin: 26px 0 0 -15px;
-  width: 90px;
+  width: 92px;
+  height: 30px;
 }
 /* Search */
 #search-area {
@@ -73,7 +73,7 @@ header {
 .apps:hover {
   background-color: rgba(60,64,67,0.08);
 }
-/* Sign In */
+/* Sign in */
 #signin-area {
   grid-area: signin;
   place-self: center;
@@ -94,6 +94,33 @@ header {
   box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
 /* Navigation */
-.nav {
+#nav {
   grid-area: nav;
+  display: flex;
+  width: 640px;
+}
+.nav-icons-menu {
+  width: 460px;
+}
+.menu-item-all {
+  width: 60px;
+  font-size: 13px;
+  color: #1A73E8;
+  cursor: pointer;
+  border-bottom: 3px solid #1A73E8;
+}
+.menu-item {
+  width: 60px;
+}
+.nav-icon {
+  width: 16px;
+  fill: currentColor;
+  color: #5f6368;
+}
+.nav-txt {
+  font-size: 13px;
+  color: #5f6368;
+}
+.nav-menu {
+  width: 180px;
 }

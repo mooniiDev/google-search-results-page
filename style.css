@@ -8,7 +8,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 146px 640px auto 70px 142px;
-  grid-template-rows: 65px 58px;
+  grid-template-rows: 65px 57px;
   grid-template-areas:
     "logo search auto apps signin"
     ". nav . . .";
@@ -39,6 +39,7 @@ header {
   height: 46px;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
+  color: rgba(0,0,0,.87);
 }
 .search-bar:hover {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
@@ -62,7 +63,7 @@ header {
   place-self: center;
 }
 .apps {
-  margin: 27px -7px 0 0;
+  margin: 27px -7px 0 10px;
   padding: 8px;
   width: 40px;
   fill: currentColor;
@@ -79,10 +80,10 @@ header {
   margin-top: 22px;
 }
 .signin {
-  margin-right: 46px;
-  padding: 9px 25px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  margin-right: 35px;
+  padding: 10px 26px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
   font-weight: 400;
   color: #FFF;
   background-color: #1a73e8;
@@ -90,49 +91,43 @@ header {
 }
 .signin:hover {
   background-color:#2b7de9;
-  box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+  box-shadow: 0 1px 2px 0 rgba(6,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
 /* Navigation */
 #nav {
   grid-area: nav;
   display: flex;
-  width: 640px;
+}
+.search-modes,
+.search-settings {
+  display: flex;
+  margin-left: 10px;
   font-size: 13px;
   color: #5f6368;
-  align-items: baseline;
 }
-.nav-icons-menu {
-  width: 500px;
+.nav-mode {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 16px 12px 12px 9px;
 }
-.icons-menu-item {
-  margin-right: 7px;
-}
-.icons-menu-all {
-  display: inline-block;
-  margin: 23px 5px 0;
-  padding-bottom: 13px;
-  width: 58px;
+.selected-mode {
   border-bottom: 3px solid #1A73E8;
-}
-.all-txt {
-  margin-left: 2px;
   color: #1A73E8;
 }
-.nav-icon {
+.mode-icon {
+  margin: 0 5px 0 2px;
   width: 16px;
-  margin-left: 12px;
   fill: currentColor;
   color: #5f6368;
 }
-.nav-icon-more {
-  margin-right: -3px;
+.mode-text {
+  margin-top: 1px;
 }
-.icon-txt {
-  margin-left: 1px;
+.search-settings {
+  margin-left: 54px;
 }
-.nav-menu {
-  width: 140px;
-}
-.nav-txt {
-  margin: 0 -1px 0 22px;
+.nav-tools {
+  margin-top: 11px;
+  padding: 16px 12px 12px 12px;
 }

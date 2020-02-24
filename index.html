@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>build this webpage - Google Search</title>
   <link type="image/x-icon" rel="shortcut icon" href="images/google-favicon-32.ico" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" /> -->
   <link type="text/css" rel="stylesheet" href="normalize.css" />
   <link type="text/css" rel="stylesheet" href="reset-local.css" />
   <link type="text/css" rel="stylesheet" href="style.css" />
@@ -52,70 +52,106 @@
     </div>
     <!-- Navigation -->
     <nav id="nav">
-      <div class="nav-icons-menu">
+      <section class="search-modes">
         <!-- All -->
-        <a href="#" class="icons-menu-all">
-          <svg viewBox="0 0 24 24"class="nav-icon">
-            <path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path>
-            <path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path>
-            <path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path>
-            <path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
-          </svg>
-          <span class="all-txt">All</span>
+        <a href="#">
+          <div class="selected-mode nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path>
+              <path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path>
+              <path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path>
+              <path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
+            </svg>
+            <span class="mode-text">
+              All
+            </span>
+          </div>
         </a>
         <!-- Maps -->
-        <a href="#" class="icons-menu-item">
-          <svg viewBox="0 0 24 24" class="nav-icon">
-            <circle cx="12.01" cy="9.32" r="1.93"></circle>
-            <path
-              d="M11.98,21.85c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c0.67,0,0.89-0.48,1.14-1.09 c0.26-0.59,0.75-1.71,1.29-2.53c0.57-0.85,1.16-1.58,1.75-2.29c1.52-1.87,2.96-3.62,2.96-6.65c0.02-3.94-3.19-7.15-7.14-7.15 c-0.01,0-0.01,0-0.02,0s-0.01,0-0.02,0c-3.95,0-7.15,3.21-7.15,7.15c0,3.03,1.44,4.8,2.96,6.65c0.58,0.71,1.17,1.44,1.75,2.29 c0.54,0.82,1.04,1.93,1.29,2.53C11.1,21.37,11.31,21.85,11.98,21.85z M9.35,14.69C7.88,12.9,6.83,11.62,6.83,9.3 c0-2.84,2.31-5.15,5.15-5.15c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c2.84,0,5.15,2.31,5.15,5.15c0.01,2.32-1.04,3.61-2.5,5.39 c-0.58,0.71-1.24,1.52-1.87,2.45c-0.3,0.44-0.56,0.94-0.8,1.4c-0.24-0.46-0.5-0.97-0.8-1.4C10.59,16.2,9.93,15.4,9.35,14.69z">
-            </path>
-          </svg>
-          <span class="icon-txt">Maps</span>
+        <a href="#">
+          <div class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <circle cx="12.01" cy="9.32" r="1.93"></circle>
+              <path
+                d="M11.98,21.85c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c0.67,0,0.89-0.48,1.14-1.09 c0.26-0.59,0.75-1.71,1.29-2.53c0.57-0.85,1.16-1.58,1.75-2.29c1.52-1.87,2.96-3.62,2.96-6.65c0.02-3.94-3.19-7.15-7.14-7.15 c-0.01,0-0.01,0-0.02,0s-0.01,0-0.02,0c-3.95,0-7.15,3.21-7.15,7.15c0,3.03,1.44,4.8,2.96,6.65c0.58,0.71,1.17,1.44,1.75,2.29 c0.54,0.82,1.04,1.93,1.29,2.53C11.1,21.37,11.31,21.85,11.98,21.85z M9.35,14.69C7.88,12.9,6.83,11.62,6.83,9.3 c0-2.84,2.31-5.15,5.15-5.15c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c2.84,0,5.15,2.31,5.15,5.15c0.01,2.32-1.04,3.61-2.5,5.39 c-0.58,0.71-1.24,1.52-1.87,2.45c-0.3,0.44-0.56,0.94-0.8,1.4c-0.24-0.46-0.5-0.97-0.8-1.4C10.59,16.2,9.93,15.4,9.35,14.69z">
+              </path>
+            </svg>
+            <span class="mode-text">
+              Maps
+            </span>
+          </div>
         </a>
         <!-- Videos -->
-        <a href="#" class="icons-menu-item">
-          <svg viewBox="0 0 24 24" class="nav-icon">
-            <path
-              d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z">
-            </path>
-          </svg>
-          <span class="icon-txt">Videos</span>
+        <a href="#">
+          <div class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z">
+              </path>
+            </svg>
+            <span class="mode-text">
+              Videos
+            </span>
+          </div>
         </a>
         <!-- News -->
-        <a href="#" class="icons-menu-item">
-          <svg viewBox="0 0 24 24" class="nav-icon">
-            <path
-              d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z">
-            </path>
-          </svg>
-          <span class="icon-txt">News</span>
+        <a href="#">
+          <div class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z">
+              </path>
+            </svg>
+            <span class="mode-text">
+              News
+            </span>
+          </div>
         </a>
         <!-- Images -->
-        <a href="#" class="icons-menu-item">
-          <svg viewBox="0 0 24 24" class="nav-icon">
-            <path
-              d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z">
-            </path>
-          </svg>
-          <span class="icon-txt">Images</span>
+        <a href="#">
+          <div class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z">
+              </path>
+            </svg>
+            <span class="mode-text">
+              Images
+            </span>
+          </div>
         </a>
         <!-- More -->
-        <a href="#" class="icons-menu-item">
-          <svg viewBox="0 0 24 24" class="nav-icon nav-icon-more">
-            <path
-              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
-            </path>
-          </svg>
-          <span class="icon-txt">More</span>
+        <a href="#">
+          <div class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon" style="margin-right: 0px;">
+              <path
+                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+              </path>
+            </svg>
+            <span class="mode-text">
+              More
+            </span>
+          </div>
         </a>
-      </div>
-      <div class="nav-menu">
+      </section>
+      <section class="search-settings">
         <!-- Settings -->
-        <a href="#" role="button" class="nav-txt">Settings</a>
+        <a href="#" role="button">
+          <div class="nav-mode">
+            <span class="mode-text">
+              Settings
+            </span>
+          </div>
+        </a>
         <!-- Tools -->
-        <a href="#" role="button" class="nav-txt">Tools</a>
-      </div>
+        <a href="#" role="button" class="nav-tools">
+          <div>
+            <span class="mode-text">
+              Tools
+            </span>
+          </div>
+        </a>
+      </section>
     </nav>
   </header>
 </body>

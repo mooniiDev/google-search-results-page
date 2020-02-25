@@ -98,15 +98,14 @@ header {
   grid-area: nav;
   display: flex;
 }
-.search-modes,
-.search-settings {
+.search-modes {
   display: flex;
   margin-left: 10px;
   font-size: 13px;
   color: #5f6368;
 }
 .nav-mode {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   margin-top: 10px;
   padding: 16px 12px 12px 9px;
@@ -116,7 +115,8 @@ header {
   color: #1A73E8;
 }
 .mode-icon {
-  margin: 0 5px 0 2px;
+  margin: 0 5px 3px 2px;
+  height: 16px;
   width: 16px;
   fill: currentColor;
   color: #5f6368;
@@ -124,10 +124,18 @@ header {
 .mode-text {
   margin-top: 1px;
 }
+.mode-more {
+  margin-right: 0px;
+  margin-left: -1px;
+}
 .search-settings {
-  margin-left: 54px;
+  margin-left: 57px;
+  font-size: 13px;
+  color: #5f6368;
 }
 .nav-tools {
-  margin-top: 11px;
-  padding: 16px 12px 12px 12px;
+  margin: 21px 0 7px -3px;
+  padding: 6px 11px;
+  border: 1px solid transparent;
 }
+

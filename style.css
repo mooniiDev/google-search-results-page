@@ -110,6 +110,10 @@ header {
   margin-top: 10px;
   padding: 16px 12px 12px 9px;
 }
+.nav-mode:hover svg,
+.nav-mode:hover {
+  color: #1A73E8;
+}
 .selected-mode {
   border-bottom: 3px solid #1A73E8;
   color: #1A73E8;
@@ -138,4 +142,11 @@ header {
   padding: 6px 11px;
   border: 1px solid transparent;
 }
-
+.nav-tools:hover {
+  background-color: #f8f8f8;
+  background-image: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  transition: all 0.0s;
+}

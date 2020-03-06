@@ -151,7 +151,7 @@ header {
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
   transition: all 0.0s;
 }
-/* Main Content*/
+/* Main Content */
 main {
   display: grid;
   grid-template-columns: 146px 640px auto;
@@ -206,38 +206,6 @@ h3:hover {
 b {
   color: #52565A;
 }
-/* Questions Box */
-.questions-box {
-  margin: 0 -20px 48px -20px;
-  border: 1px solid #dfe1e5;
-  border-radius: 8px;
-}
-.questions-box-title {
-  font-size: 20px;
-  padding: 9px 16px;
-  line-height: 1.3;
-}
-.question {
-  padding: 9px 16px;
-  line-height: 1.58;
-  border-top: 1px solid #e5e5e5;
-}
-.question-arrow {
-  float: right;
-  width: 24px;
-  fill: currentColor;
-  color: #70757A;
-}
-.feedback {
-  padding: 6px 15px 0;
-  float: right;
-  font-size: 12px;
-  font-style: italic;
-  color: #70757a;
-}
-.feedback:hover {
-  text-decoration: underline;
-}
 /* Videos */
 .video-heading {
   padding-bottom: 12px;
@@ -279,4 +247,88 @@ b {
 }
 .video-date {
   color: #808080;
+}
+/* Questions Box */
+.questions-box {
+  margin: 0 -20px 48px -20px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+}
+.questions-box-title {
+  font-size: 20px;
+  padding: 9px 16px;
+  line-height: 1.3;
+}
+.question {
+  padding: 9px 16px;
+  line-height: 1.58;
+  border-top: 1px solid #e5e5e5;
+}
+.question-arrow {
+  float: right;
+  width: 24px;
+  fill: currentColor;
+  color: #70757A;
+}
+.question-feedback,
+.related-search-feedback {
+  padding: 6px 15px 0;
+  float: right;
+  font-size: 12px;
+  font-style: italic;
+  color: #70757a;
+}
+.question-feedback:hover,
+.related-search-feedback:hover {
+  text-decoration: underline;
+}
+/* Related Search */
+.related-search-box {
+  margin: 28px -20px 0 -20px;
+  padding: 16px 0;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+}
+.related-search {
+  margin: 0 0 3px 16px;
+  font-size: 14px;
+  color: #70757a;
+}
+.related-search-title {
+  margin: 0 16px;
+  color: #222;
+  line-height: 1.3;
+  font-size: 20px;
+}
+.more-related-items {
+  float: right;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #70757a;
+}
+.more-related-items:hover {
+  text-decoration: underline;
+}
+.items-links {
+  display: flex;
+  padding-bottom: 4px;
+  padding-top: 14px;
+}
+.item {
+  width: 72px;
+  margin-left: 17px;
+}
+.item-name {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #1a0dab;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-logo:hover + .item-name,
+.item-name:hover {
+  text-decoration: underline;
+}
+.related-search-feedback {
+  padding: 6px 0;
 }

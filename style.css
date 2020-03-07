@@ -325,9 +325,12 @@ b {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.item-logo:hover + .item-name,
-.item-name:hover {
+.item a {
+  display: block;
+}
+.item a:hover {
   text-decoration: underline;
+  text-decoration-color: #1a0dab;
 }
 .related-search-feedback {
   padding: 6px 0;

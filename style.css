@@ -155,7 +155,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 146px 640px auto;
-  grid-template-rows: 3500px;
+  grid-template-rows: auto;
   grid-template-areas:
     ". main .";
 }
@@ -336,4 +336,29 @@ b {
 }
 .related-search-feedback {
   padding: 6px 0;
+}
+/* Related Searches */
+.related-searches-heading {
+  margin-top: 27px;
+  padding-bottom: 20px;
+  color: #222;
+}
+.related-searches-block {
+  display: inline-flex;
+}
+.related-searches-card {
+  display: flex;
+  flex-direction: column;
+}
+.related-searches-card a {
+  padding: 3px 32px 7px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a0dab;
+}
+.no-bold {
+  font-weight: normal;
+}
+.related-searches-card a:hover {
+  text-decoration: underline;
 }

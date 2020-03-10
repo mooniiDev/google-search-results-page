@@ -360,16 +360,19 @@ b {
   text-decoration: underline;
 }
 /* Pager */
-table {
+.table {
   margin: 30px auto;
   border-collapse: collapse;
 }
-td {
+.table-data {
   padding: 0;
   text-align: center;
 }
-td a {
+.table-data a {
   color: #4285f4;
+}
+.table-data a:hover {
+  text-decoration: underline;
 }
 .google-G {
   display: block;

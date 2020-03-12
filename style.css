@@ -16,7 +16,7 @@ header {
   position: sticky;
 }
 /* Logo */
-#logo-area {
+.logo-area {
   grid-area: logo;
   place-self: center;
 }
@@ -169,7 +169,7 @@ main {
   line-height: 43px;
   color: #70757a;
 }
-.search-results {
+.search-results-block {
   padding-top: 8px;
 }
 .search-result {
@@ -177,6 +177,13 @@ main {
 }
 .search-result a {
   display: inline-block;
+  color: #1a0dab;
+}
+.search-result > a:hover h3 {
+  text-decoration: underline;
+}
+.search-result a:visited {
+  color: #609;
 }
 .cite {
   line-height: 1.3;
@@ -190,10 +197,6 @@ h3 {
   margin-top: 4px;
   font-size: 20px;
   line-height: 1.3;
-  color: #1a0dab;
-}
-.search-result > a:hover h3 {
-  text-decoration: underline;
 }
 .result-date {
   color: #70757a;
@@ -208,14 +211,12 @@ b {
   color: #52565A;
 }
 /* Videos */
-.video-heading {
+.videos-heading {
+  margin-left: 21px;
   padding-bottom: 12px;
   font-size: 20px;
   line-height: 1.3;
   color: #222;
-}
-.video-heading:hover {
-  text-decoration: none;
 }
 .videos {
   margin: 0 -20px 40px -21px;
@@ -228,15 +229,22 @@ b {
   border: 1px solid #dfe1e5;
   border-radius: 8px;
 }
+.video-link {
+  display: block;
+}
+.video-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #1a0dab;
+}
+.video-link:visited > .video-name {
+  color: #609;
+}
 .video-name {
   padding: 13px 16px 0 16px;
   height: 6.875rem;
   line-height: 1.375;
   font-size: 16px;
   color: #1a0dab;
-}
-.video-name:hover {
-  text-decoration: underline;
 }
 .video-channel {
   padding: 19px 0 0 16px;
@@ -290,6 +298,9 @@ b {
   padding: 16px 0;
   border: 1px solid #dfe1e5;
   border-radius: 8px;
+}
+.item a:visited > .item-name {
+  color: #609;
 }
 .related-search {
   margin: 0 0 3px 16px;
@@ -352,6 +363,9 @@ b {
   padding: 3px 32px 7px 0;
   font-weight: bold;
   color: #1a0dab;
+}
+.related-searches-card a:visited {
+  color: #609;
 }
 .no-bold {
   font-weight: normal;

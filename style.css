@@ -380,51 +380,51 @@ b {
   text-decoration: underline;
 }
 /* Pager */
-.table {
+.pager {
   margin: 30px auto;
   border-collapse: collapse;
 }
 tr {
   vertical-align: top;
 }
-.table-data {
+.pager-td {
   padding: 0;
   text-align: center;
 }
-.table-data a {
+.pager-td a {
   color: #4285f4;
 }
-.table-data a:hover {
+.pager-td a:hover {
   text-decoration: underline;
 }
-.google-G {
+.pager-G {
   display: block;
   background: url(images/google-pager.webp) no-repeat;
   background-position: -24px 0;
   width:28px;
   height: 40px;
 }
-.google-red-o {
+.pager-red-o {
   display: block;
   background: url(images/google-pager.webp) no-repeat;
   background-position: -53px 0;
   width:20px;
   height: 40px;
 }
-.google-yellow-o {
+.pager-yellow-o {
   display: block;
   background: url(images/google-pager.webp) no-repeat;
   background-position: -74px 0;
   width:20px;
   height: 40px;
 }
-.google-gle {
+.pager-gle {
   display: block;
   background: url(images/google-pager.webp) no-repeat;
   background-position: -96px 0;
   width:71px;
   height: 40px;
 }
-.next {
+.pager-next {
   margin-left: 53px;
 }

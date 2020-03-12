@@ -236,6 +236,9 @@ b {
   text-decoration: underline;
   text-decoration-color: #1a0dab;
 }
+.video-link:visited:hover {
+  text-decoration-color: #609;
+}
 .video-link:visited > .video-name {
   color: #609;
 }
@@ -343,6 +346,9 @@ b {
   text-decoration: underline;
   text-decoration-color: #1a0dab;
 }
+.item a:visited:hover {
+  text-decoration-color: #609;
+}
 .related-search-feedback {
   padding: 6px 0;
 }
@@ -377,6 +383,9 @@ b {
 .table {
   margin: 30px auto;
   border-collapse: collapse;
+}
+tr {
+  vertical-align: top;
 }
 .table-data {
   padding: 0;

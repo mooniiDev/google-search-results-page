@@ -31,9 +31,6 @@ header {
 #search-area {
   grid-area: search;
 }
-input {
-  font-size: 16px;
-}
 .search-container {
   display: flex;
   flex-direction: row-reverse;
@@ -46,6 +43,8 @@ input {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   color: rgba(0,0,0,.87);
+  outline: none;
+  font-size: 16px;
 }
 .search-bar:hover {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
@@ -57,6 +56,7 @@ input {
   width: 24px;
   fill: currentColor;
   color: #4285f4;
+  outline: none;
 }
 .search-btn:hover + .search-bar {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);

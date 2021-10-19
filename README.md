@@ -11,7 +11,7 @@
 * Used **CSS Grid** for **header**, **main** and **footer** layouts.
 * Used **CSS Flexbox** for **navigation**, **search bar** and **related searches** layouts.
 ## Summary
-Project can be found in [The Odin Project curriculum](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-css).
+Project was from **The Odin Project** curriculum (removed).
 
 **Live preview** of the page is [here](https://mooniiDev.github.io/google-search-results-page).
 
